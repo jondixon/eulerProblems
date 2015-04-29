@@ -23,14 +23,14 @@ int main( )
     long long int maxProduct = 0;
 
 
-    for( int i = 0; i < 1000 - 5; i++ )
+    for( int i = 0; i < 1000 - 12; i++ )
     {
         long long int currentProduct = 1;
 
-        for( int j = i; j < i + 4; j++ )
+        for( int j = i; j < i + 13; j++ )
         {
             cout << "j: " << j << " i: " << i << endl;
-            currentProduct *= (longNum[i] - '0');
+            currentProduct *= (longNum[j] - '0');
         }
 
         if( currentProduct > maxProduct )
